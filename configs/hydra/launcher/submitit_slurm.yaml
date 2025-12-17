@@ -1,0 +1,16 @@
+# @package _group_
+# 'oc.select' provides a fallback value when variables are missing (e.g. during local runs)
+
+submitit_folder: ${oc.select:hydra.sweep.dir,.}/.submitit/%j
+timeout_min: 1440
+cpus_per_task: 8
+gpus_per_node: 1
+tasks_per_node: 1
+mem_gb: 32
+nodes: 1
+name: ${oc.select:hydra.job.name,local_run}
+partition: gpu
+
+setup:
+  - "module load cuda/11.8"
+  - "source .venv/bin/activate"

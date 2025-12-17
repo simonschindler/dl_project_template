@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - model: baseline
+  - override hydra/launcher: submitit_slurm
+
+# Global Hyperparameters
+seed: 42
+batch_size: 32
+epochs: 10
+lr: 1e-3
+
+# Weights & Biases Settings
+wandb:
+  project: "dl_experiment_repo"
+  entity: null  # Set your username here
+  mode: "online" # "offline" for air-gapped nodes
