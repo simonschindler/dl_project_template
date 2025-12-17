@@ -2,7 +2,7 @@
 name = "dl_experiment_repo"
 version = "0.1.0"
 description = "Deep learning project using Hydra, Submitit, and W&B"
-requires-python = "=3.13"
+requires-python = "==3.13"
 readme = "README.md"
 dependencies = [
     "torch",
