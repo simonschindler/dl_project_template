@@ -41,7 +41,7 @@ A modular, reproducible deep learning template designed for seamless transition 
 You need **[uv](https://github.com/astral-sh/uv)** installed.
 
 ```bash
-curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ### 2. Installation
